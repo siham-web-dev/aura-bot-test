@@ -3,6 +3,7 @@ import { useState } from "react";
 import AIModalsDropdown from "./AIModalsDropdown";
 import { Button } from "@heroui/button";
 import { MoveUp, SendHorizonal, SendHorizonalIcon } from "lucide-react";
+import { Divider } from "@heroui/divider";
 
 const SearchInput = () => {
   const [showTextArea, setShowTextArea] = useState<boolean>(true);
@@ -66,11 +67,15 @@ const SearchInput = () => {
           />
 
           {/* Dropdown inside textarea */}
-          <div className="absolute bottom-3 left-3 w-full">
+          <div className="absolute bottom-3 left-3 w-full max-w-[96%] md:max-w-[320px] lg:max-w-[650px] flex flex-col gap-2">
+            <Divider />
             <div className="flex justify-between items-center w-full">
               <AIModalsDropdown />
-              <Button variant="light" disabled>
-                <MoveUp size={"12px"} />
+              <Button
+                className="!rounded-full !p-[8px] !w-auto !h-auto min-w-[24px] bg-[#D4D4D8] "
+                variant="light"
+              >
+                <MoveUp size={"12px"} color="#52525B" />
               </Button>
             </div>
           </div>

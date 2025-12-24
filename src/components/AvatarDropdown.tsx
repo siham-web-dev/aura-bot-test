@@ -31,7 +31,6 @@ const AvatarDropdown = () => {
           {/* User Info */}
           <DropdownItem
             key="user"
-            startContent={<Avatar src="/assets/pngs/avatar.png" />}
             description="iboudjelthia@futuretail.ai"
             className="cursor-default"
           >
@@ -61,7 +60,7 @@ const AvatarDropdown = () => {
           <DropdownItem
             key="UpgradePlan"
             startContent={
-              <img src="/assets/svgs/upgrade.svg" alt="Upgrade Plan" />
+              <img src="/assets/svgs/upgrade-plan.svg" alt="Upgrade Plan" />
             }
           >
             Upgrade Plan
@@ -74,22 +73,11 @@ const AvatarDropdown = () => {
             Help
           </DropdownItem>
 
-          <DropdownItem
-            key="Feedback"
-            startContent={
-              <img src="/assets/svgs/feedback.svg" alt="Send Feedback" />
-            }
-          >
-            Send Feedback
-          </DropdownItem>
-
-          <Divider />
-
           {/* Log Out */}
           <DropdownItem
             key="LogOut"
             className="text-red-500"
-            startContent={<img src="/assets/svgs/logout.svg" alt="Log Out" />}
+            startContent={<img src="/assets/svgs/log-out.svg" alt="Log Out" />}
           >
             Log Out
           </DropdownItem>
