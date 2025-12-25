@@ -5,7 +5,6 @@ import {
   DropdownItem,
 } from "@heroui/dropdown";
 import { Avatar } from "@heroui/avatar";
-import { Divider } from "@heroui/divider";
 
 const AvatarDropdown = () => {
   return (

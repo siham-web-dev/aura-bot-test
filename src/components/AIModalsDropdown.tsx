@@ -7,7 +7,7 @@ import {
   DropdownSection,
 } from "@heroui/dropdown";
 import { useMemo, useState } from "react";
-import { ChevronDown, Sparkles, Plus, Info, Settings } from "lucide-react";
+import { ChevronDown, Plus, Info, Settings } from "lucide-react";
 
 export default function AIModelsDropdown() {
   const [selectedKeys, setSelectedKeys] = useState(new Set(["analytics_pro"]));

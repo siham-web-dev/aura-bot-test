@@ -2,7 +2,7 @@ import { Input, Textarea } from "@heroui/input";
 import { useState } from "react";
 import AIModalsDropdown from "./AIModalsDropdown";
 import { Button } from "@heroui/button";
-import { MoveUp, SendHorizonal, SendHorizonalIcon } from "lucide-react";
+import { MoveUp } from "lucide-react";
 import { Divider } from "@heroui/divider";
 
 const SearchInput = () => {
